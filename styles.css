@@ -232,17 +232,21 @@ p{
     /* TO DO */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px 32px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/-1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #plants h4{
@@ -255,6 +259,8 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: unset;
+    display: flex;
 }
 
 .price{
@@ -273,12 +279,16 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/-1;
 }
 
 /* Contact text color */
@@ -365,6 +375,9 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social ul{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
     width: fit-content;
     margin: 16px auto;
     list-style-type: none;
